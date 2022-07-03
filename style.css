@@ -4,7 +4,7 @@ background: linear-gradient(to right, #654ea3, #eaafc8);
         }
         img{
         	width:100%;
-        height:55%;
+        height: 55%;
         }
         #score{
         	font-size: 60px;
@@ -13,7 +13,7 @@ background: linear-gradient(to right, #654ea3, #eaafc8);
         }
         
         #d1{
-        	border: 2px solid gray;
+        	border: 2px solid black;
         }
         #d2{
         	background-color:#694ea3;
