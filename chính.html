@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPCAT AIC</title>
+<script  src="script.js"></script>
+    </head>
+<link rel="stylesheet" href="style.css">
+<body>
+	<div id="d2">
+        <h1 id="score">0</h1>
+        </div>
+        	<div id="d1">
+        <img src="popaic.jpg" alt="Invalid" id="popcat1">     	
+</div>
+<script>
+    	var img = document.getElementById("popcat1");
+var count = document.getElementById("score");
+var score = 0;
+var audio = new Audio('pop.mp3');
+
+// touchclick event
+img.addEventListener("touchstart", function(){
+	
+    img.src = 'popaic2.jpg';
+audio.play();  
+increaseScore();
+  
+});
+img.addEventListener("touchend", function(){
+    img.src = 'popaic.jpg';
+audio.play();    
+});
+
+
+function increaseScore(){
+    score++;
+    count.innerHTML = score;
+}
+	</script>
+</body>  
+</html>
