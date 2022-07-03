@@ -21,6 +21,16 @@
 var count = document.getElementById("score");
 var score = 0;
 var audio = new Audio('pop.mp3');
+	img.addEventListener("mousedown", function(){
+    increaseScore();
+    img.src = 'popaic2.png';
+    audio.play();
+});
+    
+img.addEventListener("mouseup", function(){
+    img.src = 'popaic.png';
+    audio.play();
+});
 
 // touchclick event
 img.addEventListener("touchstart", function(){
